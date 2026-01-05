@@ -1,54 +1,44 @@
-// Basics - 6
+// Basics - 7
 #include <stdio.h>
-
-void greet()
-{
-    printf("Hello, welcome!\n");
-}
-
-int sum(int a, int b)
-{
-    return a + b;
-}
 
 int main(void) 
 {
-    // integer
-    int age = 20;
+    fputs("This is my string\n", stdout);
 
-    int var = 22;
+    // scanf("formatted_string", address_of_variables/values);
     
-    printf("var = %d", var);
+    int age1;
+    printf("Enter your age: ");
+  
+    // Reads an integer
+    scanf("%d", &age1);  
+  
+    // Prints the age
+    printf("Age is: %d\n", age1);  
 
-    // floating-point
-    float height = 5.7;
+    char ch;
+    printf("Enter a character: \n");
+  
+    // Reads an Character
+    scanf("%c", &ch);  
+  
+    // Prints the Character
+    printf("Entered character is: %c\n", ch);  
+
+    char str[100];  // Declare an array to hold the input string
+
+    printf("Enter a string: ");
+    scanf("%s", str);  // Reads input until the first space or newline
+
+    printf("You entered: %s\n", str);
+
+    // String variable
+    char name[20];
     
-    float val = 12.45;
+    printf("Enter your name: \n");
+    fgets(name, sizeof(name), stdin);
     
-    printf("val = %f", val);
-
-    // double-precision floating-point
-    double pi = 3.14159;
-
-    double val = 1.4521;
+    printf("Hello, %s", name);
     
-    printf("val = %lf", val);
-
-    // character
-    char grade = 'A';
-
-    char ch = 'A';
-    
-    printf("ch = %c", ch);
-
-    printf("Age: %d\n", age);
-    printf("Height: %.1f\n", height);
-    printf("Pi: %.5lf\n", pi);
-    printf("Grade: %c\n", grade);
-    printf("The size of int: %d\n", sizeof(int));
-    printf("The size of char: %d\n", sizeof(char));
-    printf("The size of float: %d\n", sizeof(float));
-    printf("The size of double: %d", sizeof(double));
-    greet();
     return 0;
 }
