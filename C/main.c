@@ -25,7 +25,7 @@ int main()
     char grade = 'A';
     char powerUp = '^';
     printf("\nYour grade is: %c", grade);
-    printf("\n Python is so stupid, it uses ** for power up instead of %c", powerUp);
+    printf("\nPython is so stupid, it uses ** for power up instead of %c", powerUp);
     // Strings (Char arrays)
     char name[] = "Ali";
     printf("\nMy name is %s", name);
@@ -34,19 +34,53 @@ int main()
 
     if (isOnline)
     {
-        printf("you aren't online");
+        printf("\nyou aren't online");
     }
     else
     {
-        printf("you are online");
+        printf("\nyou are online");
     }
+    /*
+    int = whole numbers (4 bytes in modern systems)
+    float = single-precision decimal number (4 bytes)
+    double = double-precision decimal number (8 bytes)
+    char = single character (1 byte)
+    char [] = array of characters (size varies)
+    bool = true or false (1 byte, requires <stdbool.h>)
+    */
 
-    // int = whole numbers (4 bytes in modern systems)
-    // float = single-precision decimal number (4 bytes)
-    // double = double-precision decimal number (8 bytes)
-    // char = single character (1 byte)
-    // char [] = array of characters (size varies)
-    // bool = true or false (1 byte, requires <stdbool.h>)
+    // Format Modifiers
+    int v0 = 13;
+    float v1 = 20.99;
+    double v2 = 3.14159;
+    char v3 = '$';
+    char v4[] = "Ali";
+    printf("\n%d", v0);
+    printf("\n%f",v1);
+    printf("\n%lf", v2);
+    printf("\n%c", v3);
+    printf("\n%s", v4);
+    // Width
+    int n1 = 1;
+    int n2 = 10;
+    int n3 = 100;
+    int n4 = -100;
+
+    printf("\n%4d", n1); // you can do also %-4d for opposite way
+    printf("\n%4d", n2);
+    printf("\n%4d", n3);
+
+    printf("\n%04d", n1); 
+    printf("\n%04d", n2);
+    printf("\n%04d", n3);
+
+    printf("\n%+d", n1);
+    printf("\n%+d", n2);
+    printf("\n%+d", n3);
+    printf("\n%+d", n4);
+    // Precision
+    float p1 = 19.99;
+    printf("\n%.2f", p1); // if it was %.1f, because of original p1 has second float point, it will be rounded to 20.00
 
     return 0;
 }
