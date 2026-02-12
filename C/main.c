@@ -56,7 +56,7 @@ int main()
     char v3 = '$';
     char v4[] = "Ali";
     printf("\n%d", v0);
-    printf("\n%f",v1);
+    printf("\n%f", v1);
     printf("\n%lf", v2);
     printf("\n%c", v3);
     printf("\n%s", v4);
@@ -70,7 +70,7 @@ int main()
     printf("\n%4d", n2);
     printf("\n%4d", n3);
 
-    printf("\n%04d", n1); 
+    printf("\n%04d", n1);
     printf("\n%04d", n2);
     printf("\n%04d", n3);
 
@@ -81,6 +81,30 @@ int main()
     // Precision
     float p1 = 19.99;
     printf("\n%.2f", p1); // if it was %.1f, because of original p1 has second float point, it will be rounded to 20.00
+
+    // Arithmetic Operations
+    int x = 10;
+    int y = 3;
+    int z = 0;
+
+    /*
+    // 4 functions
+    z = x + y; // 13
+    z = x - y; // 7
+    z = x * y; // 30
+    z = x / y; // 3
+    // more advanced
+    z = x % y; // 1
+    z = x++ // 11
+    z = y-- // 2
+    // Augmented assignment operators
+    x += 2
+    x -= 2
+    x *= 2
+    x /= 2
+    */
+    printf("\n%d", z);
+    printf("\n%d", x);
 
     return 0;
 }
